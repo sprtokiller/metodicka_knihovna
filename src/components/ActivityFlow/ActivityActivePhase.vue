@@ -52,11 +52,11 @@
         <span class="list-infocontent" :style="{ color: OK }">Kantor posoudí správnost a věcnost odpovědi. Zapisuje info, zda otázka zodpovězena či nezodpovězena</span>
       </n-list-item>
     </n-list>
-    <n-input
+    <!-- <n-input
       v-model:value="value"
       type="textarea"
       placeholder="Vlastní komentář"
-    />
+    /> -->
   </n-card>
 </template>
 

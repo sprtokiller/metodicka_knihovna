@@ -1,5 +1,5 @@
 <template>
-  <section id="activity-prep" class="pt-2">
+  <section>
     <n-h2>Příprava</n-h2>
     <ActivityMaterials />
   </section>

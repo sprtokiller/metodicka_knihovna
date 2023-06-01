@@ -1,12 +1,12 @@
 <template>
-  <section id="activity-profile" style="height: calc(100vh - 64px - 1rem); padding-top: 1rem;">
+  <section>
     <n-h2>Profil aktivity: Tisková konference</n-h2>
     <n-row :gutter="12">
       <n-col :span="20">
         <n-empty description="You can't find anything" style="margin-top: 200px"/>
         <!-- <div class="my-5" style="max-width: 70%;"> 
           <n-h3 style="margin-bottom: 0;">Popis</n-h3>
-          Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body….​
+          Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body…
         </div>
         <div class="my-5" style="max-width: 70%; margin-left: 10%;"> 
           <n-h3 style="margin-bottom: 0;">Cíl</n-h3>
@@ -14,7 +14,7 @@
           Procvičit učivo / informace, které souvisí s probranou či v budoucnu probíranou látkou / učivem.</div>
         <div class="my-5" style="max-width: 70%;  margin-left: 5%;"> 
           <n-h3 style="margin-bottom: 0;">Přínos</n-h3>
-          Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body….​
+          Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body…
         </div> -->
       </n-col>
       <n-col :span="4">
@@ -71,7 +71,7 @@
 </template>
 
 <script setup lang="ts">
-import { useThemeVars, NH2, NRow, NCol, NTooltip, NList, NListItem, NH3, NEmpty } from 'naive-ui';
+import { useThemeVars, NH2, NRow, NCol, NTooltip, NList, NListItem, NEmpty } from 'naive-ui';
 import { TimerSharp, GroupFilled, PrintOutlined } from '@vicons/material';
 
 const values = useThemeVars().value;

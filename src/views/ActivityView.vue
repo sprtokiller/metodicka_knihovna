@@ -1,49 +1,62 @@
 <template>
   <n-layout class="vh-100 vw-100">
     <n-layout-header style="height: 4rem; padding: 1.5rem" bordered>
-      Záhlaví stránky
+      Test deploy funkce
     </n-layout-header>
     <n-layout position="absolute" style="top: 4rem;" has-sider sider-placement="right">
-      <n-layout ref="contentRef" :on-scroll="handleScroll" class="my-scroll-container" :native-scrollbar="false">
-        <div v-show="showMore" style="position: absolute; bottom: 1.5rem; margin-left: 50%;">
-          <n-button @click="contentRef?.scrollTo({ top: 630, behavior: 'smooth' })">Zobrazit více</n-button>
-        </div>
-        <div style="padding: 0rem 3rem 1rem 3rem;">
-          <ActivityProfile />
-          <ActivityFlow />
-          <ActivityPrep />
-          <n-back-top style="z-index: 99;" :bottom="30" :right="30" />
+      <n-layout :native-scrollbar="false" class="outer-content-padding">
+        <div class="inner-content-padding">
+          <n-carousel :show-dots="false" ref="carouselRef">
+            <n-carousel-item class="carousel-content-padding">
+              <ActivityProfile />
+            </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <ActivityFlow />
+            </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <ActivityPrep />
+            </n-carousel-item>
+          </n-carousel>
         </div>
       </n-layout>
       <n-layout-sider content-style="padding: 1.5rem 1.5rem 1.5rem 0px; margin-left: 1rem;" :native-scrollbar="false">
-        <ActivityNavigation />
+        <n-scrollbar class="h-100">
+          <n-anchor affix :show-rail="false" :type="'block'" :show-background="true">
+            <n-anchor-link v-for="(section, index) in sections" :key="section" :title="section" @click="jumpTo(index)" :class="{ ['n-anchor-link--active']: carouselRef?.getCurrentIndex() === index }" />
+          </n-anchor>
+        </n-scrollbar>
       </n-layout-sider>
     </n-layout>
-    <!-- <n-layout-footer position="absolute" style="height: 3rem;" bordered>
-    <div class="d-flex justify-content-center h-100">
-      <div class="align-self-center">Patička</div>
-    </div>
-  </n-layout-footer> -->
   </n-layout>
 </template>
 
+<style scoped>
+.outer-content-padding {
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+.inner-content-padding{
+  padding: 1rem 1rem 1rem 1rem;
+}
+.carousel-content-padding {
+  padding: 1rem 3rem 1rem 3rem;
+}
+</style>
+
 <script setup lang="ts">
-import ActivityNavigation from '@/components/ActivityNavigation.vue'
+import { NAnchor, NScrollbar, NAnchorLink } from 'naive-ui'
 import ActivityProfile from '@/components/ActivityProfile.vue'
 import ActivityFlow from '@/components/ActivityFlow/ActivityFlow.vue'
 import ActivityPrep from '@/components/ActivityPrep/ActivityPrep.vue'
 import { ref } from 'vue'
-import { NLayout, NLayoutHeader, NLayoutSider, NBackTop, NButton } from 'naive-ui';
-import type { LayoutInst } from 'naive-ui';
+import { NLayout, NLayoutHeader, NLayoutSider, NCarousel, NCarouselItem } from 'naive-ui';
+import type { CarouselInst } from 'naive-ui';
 
-const contentRef = ref<LayoutInst | null>(null)
-const showMore = ref(true)
-// test when the page is scrolled by at least 100px
-function handleScroll (e : any) {
-  if (e.target.scrollTop > 20) {
-    showMore.value = false
-  } else {
-    showMore.value = true
-  }
+const sections = [ 'Profil', 'Průběh krok za krokem', 'Příprava', 'Varianty', 'Ke stažení', 'Návodné otázky', 'Inspirace', 'Galerie', 'Deriváty']
+
+const carouselRef = ref<CarouselInst | null>(null)
+
+function jumpTo(index : number) {
+  carouselRef.value?.to(index)
 }
+
 </script>

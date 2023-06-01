@@ -1,5 +1,5 @@
 <template>
-  <section id="activity-flow" class="pt-2">
+  <section>
     <n-h2>Průběh krok za krokem</n-h2>
     <n-row :gutter="12" style="margin-bottom: 2rem;">
       <n-col :span="16">
