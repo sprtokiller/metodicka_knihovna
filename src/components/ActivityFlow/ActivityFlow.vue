@@ -1,6 +1,6 @@
 <template>
   <section>
-    <n-h2>Průběh krok za krokem</n-h2>
+    <n-h2 prefix="bar">Průběh krok za krokem</n-h2>
     <n-row :gutter="12" style="margin-bottom: 2rem;">
       <n-col :span="16">
         <ActivityPrepPhase style="margin-bottom: 12px;"/>

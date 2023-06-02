@@ -1,6 +1,6 @@
 <template>
   <section>
-    <n-h2>Profil aktivity: Tisková konference</n-h2>
+    <n-h2 prefix="bar">Profil aktivity: Tisková konference</n-h2>
     <n-row :gutter="12">
       <n-col :span="20">
         <n-empty description="You can't find anything" style="margin-top: 200px"/>

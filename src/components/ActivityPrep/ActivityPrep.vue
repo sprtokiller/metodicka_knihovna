@@ -1,6 +1,6 @@
 <template>
   <section>
-    <n-h2>Příprava</n-h2>
+    <n-h2 prefix="bar">Příprava</n-h2>
     <ActivityMaterials />
   </section>
 </template>
