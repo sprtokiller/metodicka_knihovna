@@ -1,3 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{b2 as o,b3 as t,b4 as r}from"./index-9bc84105.js";const a={},c=r("iframe",{src:"https://orbiseducz-my.sharepoint.com/personal/petr_kozak_orbisedu_cz/_layouts/15/Doc.aspx?sourcedoc={35f6f694-dd86-45e1-ba8d-d49a431217e8}&action=embedview&wdAr=1.7777777777777777",style:{width:"100vw",height:"100vh"},frameborder:"0"},`Toto je vložený soubor typu prezentace <a target="_blank"\r
-        href="https://office.com">Microsoft Office</a> pro aplikaci <a target="_blank"\r
-        href="https://office.com/webapps">Office</a>.`,-1),s=[c];function i(n,f){return o(),t("main",null,s)}const d=e(a,[["render",i]]);export{d as default};
