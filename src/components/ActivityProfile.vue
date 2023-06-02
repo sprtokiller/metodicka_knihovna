@@ -2,22 +2,26 @@
   <section>
     <n-h2 prefix="bar">Profil aktivity: Tisková konference</n-h2>
     <n-row :gutter="12">
-      <n-col :span="20">
-        <n-empty description="You can't find anything" style="margin-top: 200px"/>
-        <!-- <div class="my-5" style="max-width: 70%;"> 
-          <n-h3 style="margin-bottom: 0;">Popis</n-h3>
-          Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body…
+      <n-col :span="19">
+        <div class="my-5" style="max-width: 70%;"> 
+          <n-card title="Popis">
+            Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body…
+          </n-card>
         </div>
-        <div class="my-5" style="max-width: 70%; margin-left: 10%;"> 
-          <n-h3 style="margin-bottom: 0;">Cíl</n-h3>
-          Procvičit dovednost formulovat správně otázky, abych se dozvěděl požadovanou informaci.<br>
-          Procvičit učivo / informace, které souvisí s probranou či v budoucnu probíranou látkou / učivem.</div>
-        <div class="my-5" style="max-width: 70%;  margin-left: 5%;"> 
-          <n-h3 style="margin-bottom: 0;">Přínos</n-h3>
-          Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body…
-        </div> -->
+        <div class="my-5" style="max-width: 70%; margin-left: 30%;"> 
+          <n-card title="Cíl">
+            Procvičit dovednost formulovat správně otázky, abych se dozvěděl požadovanou informaci.<br>
+            Procvičit učivo / informace, které souvisí s probranou či v budoucnu probíranou látkou / učivem.
+          </n-card>
+        </div>
+        <div class="my-5" style="max-width: 70%;"> 
+          <n-card title="Přínos">
+            Otázky a odpovědi, které zazní během tiskové konference, může kantor/ka využít jako vstupy do testů či jiných forem opakování / upevňování učiva
+          </n-card>
+        </div>
       </n-col>
-      <n-col :span="4">
+
+      <n-col :span="4" offset="1">
         <n-list :show-divider="false">
           <n-list-item>
             <n-tooltip trigger="hover">
@@ -71,7 +75,7 @@
 </template>
 
 <script setup lang="ts">
-import { useThemeVars, NH2, NRow, NCol, NTooltip, NList, NListItem, NEmpty } from 'naive-ui';
+import { useThemeVars, NH2, NRow, NCol, NTooltip, NList, NListItem, NEmpty, NCard } from 'naive-ui';
 import { TimerSharp, GroupFilled, PrintOutlined } from '@vicons/material';
 
 const values = useThemeVars().value;

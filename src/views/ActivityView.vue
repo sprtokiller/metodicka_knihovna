@@ -16,6 +16,24 @@
             <n-carousel-item class="carousel-content-padding">
               <ActivityPrep />
             </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <h1>Varianty</h1>
+            </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <h1>Ke stažení</h1>
+            </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <h1>Návodné otázky</h1>
+            </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <h1>Inspirace</h1>
+            </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <h1>Galerie</h1>
+            </n-carousel-item>
+            <n-carousel-item class="carousel-content-padding">
+              <h1>Deriváty</h1>
+            </n-carousel-item>
           </n-carousel>
         </div>
       </n-layout>
