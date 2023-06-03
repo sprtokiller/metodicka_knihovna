@@ -29,7 +29,7 @@
               <h1>Inspirace</h1>
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
-              <h1>Galerie</h1>
+              <ActivityGallery />
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
               <h1>Deriváty</h1>
@@ -65,6 +65,7 @@ import { NAnchor, NScrollbar, NAnchorLink } from 'naive-ui'
 import ActivityProfile from '@/components/ActivityProfile.vue'
 import ActivityFlow from '@/components/ActivityFlow/ActivityFlow.vue'
 import ActivityPrep from '@/components/ActivityPrep/ActivityPrep.vue'
+import ActivityGallery from '@/components/ActivityGallery.vue'
 import { ref } from 'vue'
 import { NLayout, NLayoutHeader, NLayoutSider, NCarousel, NCarouselItem } from 'naive-ui';
 import type { CarouselInst } from 'naive-ui';
