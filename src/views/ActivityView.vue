@@ -17,22 +17,22 @@
               <ActivityPrep />
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
-              <h1>Varianty</h1>
+              <ActivityVariants />
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
-              <h1>Ke stažení</h1>
+              <ActivityDownload />
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
-              <h1>Návodné otázky</h1>
+              <ActivityQuestions />
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
-              <h1>Inspirace</h1>
+              <ActivityInspiration />
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
               <ActivityGallery />
             </n-carousel-item>
             <n-carousel-item class="carousel-content-padding">
-              <h1>Deriváty</h1>
+              <ActivityDerivatives />
             </n-carousel-item>
           </n-carousel>
         </div>
@@ -40,7 +40,8 @@
       <n-layout-sider content-style="padding: 1.5rem 1.5rem 1.5rem 0px; margin-left: 1rem;" :native-scrollbar="false">
         <n-scrollbar class="h-100">
           <n-anchor affix :show-rail="false" :type="'block'" :show-background="true">
-            <n-anchor-link v-for="(section, index) in sections" :key="section" :title="section" @click="jumpTo(index)" :class="{ ['n-anchor-link--active']: carouselRef?.getCurrentIndex() === index }" />
+            <n-anchor-link v-for="(section, index) in sections" :key="section" :title="section" @click="jumpTo(index)"
+              :class="{ ['n-anchor-link--active']: carouselRef?.getCurrentIndex() === index }" />
           </n-anchor>
         </n-scrollbar>
       </n-layout-sider>
@@ -52,9 +53,11 @@
 .outer-content-padding {
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
 }
-.inner-content-padding{
+
+.inner-content-padding {
   padding: 1rem 1rem 1rem 1rem;
 }
+
 .carousel-content-padding {
   padding: 1rem 3rem 1rem 3rem;
 }
@@ -65,16 +68,21 @@ import { NAnchor, NScrollbar, NAnchorLink } from 'naive-ui'
 import ActivityProfile from '@/components/ActivityProfile.vue'
 import ActivityFlow from '@/components/ActivityFlow/ActivityFlow.vue'
 import ActivityPrep from '@/components/ActivityPrep/ActivityPrep.vue'
+import ActivityVariants from '@/components/ActivityVariants.vue'
+import ActivityDownload from '@/components/ActivityDownload.vue'
+import ActivityQuestions from '@/components/ActivityQuestions.vue'
+import ActivityInspiration from '@/components/ActivityInspiration.vue'
 import ActivityGallery from '@/components/ActivityGallery.vue'
+import ActivityDerivatives from '@/components/ActivityDerivatives.vue'
 import { ref } from 'vue'
 import { NLayout, NLayoutHeader, NLayoutSider, NCarousel, NCarouselItem } from 'naive-ui';
 import type { CarouselInst } from 'naive-ui';
 
-const sections = [ 'Profil', 'Průběh krok za krokem', 'Příprava', 'Varianty', 'Ke stažení', 'Návodné otázky', 'Inspirace', 'Galerie', 'Deriváty']
+const sections = ['Profil', 'Průběh krok za krokem', 'Příprava', 'Varianty', 'Ke stažení', 'Návodné otázky', 'Inspirace', 'Galerie', 'Deriváty']
 
 const carouselRef = ref<CarouselInst | null>(null)
 
-function jumpTo(index : number) {
+function jumpTo(index: number) {
   carouselRef.value?.to(index)
 }
 

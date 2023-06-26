@@ -1,26 +1,30 @@
 <template>
   <section>
+    <!-- Main content -->
     <n-h2 prefix="bar">Profil aktivity: Tisková konference</n-h2>
     <n-row :gutter="12">
       <n-col :span="19">
-        <div class="my-5" style="max-width: 70%;"> 
+        <div class="my-5" style="max-width: 70%;">
           <n-card title="Popis">
-            Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává body…
+            Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“
+            tým expertů. Expertní tým za správné odpovědi získává body…
           </n-card>
         </div>
-        <div class="my-5" style="max-width: 70%; margin-left: 30%;"> 
+        <div class="my-5" style="max-width: 70%; margin-left: 30%;">
           <n-card title="Cíl">
             Procvičit dovednost formulovat správně otázky, abych se dozvěděl požadovanou informaci.<br>
             Procvičit učivo / informace, které souvisí s probranou či v budoucnu probíranou látkou / učivem.
           </n-card>
         </div>
-        <div class="my-5" style="max-width: 70%;"> 
+        <div class="my-5" style="max-width: 70%;">
           <n-card title="Přínos">
-            Otázky a odpovědi, které zazní během tiskové konference, může kantor/ka využít jako vstupy do testů či jiných forem opakování / upevňování učiva
+            Otázky a odpovědi, které zazní během tiskové konference, může kantor/ka využít jako vstupy do testů či jiných
+            forem opakování / upevňování učiva
           </n-card>
         </div>
       </n-col>
 
+      <!-- Right bar -->
       <n-col :span="4" offset="1">
         <n-list :show-divider="false">
           <n-list-item>
@@ -61,11 +65,12 @@
                     <print-outlined class="stat-icon" :style="{ color: mainColor }" />
                   </div>
                   <span class="stat-desc">
-                    Stopky, losovací sada, vytištěné pracovní listy 
+                    Stopky, losovací sada, vytištěné pracovní listy
                   </span>
                 </div>
               </template>
-              Losovací sada &ndash; rozdělení třídy do týmů. Ideálně avizovat rozdělení již během hodiny předešlé &ndash; šetří to čas v hodině, kdy realizujeme TK</n-tooltip>
+              Losovací sada &ndash; rozdělení třídy do týmů. Ideálně avizovat rozdělení již během hodiny předešlé &ndash;
+              šetří to čas v hodině, kdy realizujeme TK</n-tooltip>
           </n-list-item>
         </n-list>
 
@@ -75,7 +80,7 @@
 </template>
 
 <script setup lang="ts">
-import { useThemeVars, NH2, NRow, NCol, NTooltip, NList, NListItem, NEmpty, NCard } from 'naive-ui';
+import { useThemeVars, NH2, NRow, NCol, NTooltip, NList, NListItem, NCard } from 'naive-ui';
 import { TimerSharp, GroupFilled, PrintOutlined } from '@vicons/material';
 
 const values = useThemeVars().value;
@@ -93,14 +98,14 @@ const mainColor = values.primaryColor;
   opacity: 0.7;
 }
 
-.stat-trig{
+.stat-trig {
   text-align: center;
 }
+
 .box {
-  width: 500px; 
-  height: 100px;  
+  width: 500px;
+  height: 100px;
   border: solid 5px #000;
   border-color: gray;
   border-radius: 0 50%/100px 100px 0;
-}
-</style>
+}</style>

@@ -1,4 +1,5 @@
-img, svg {
+img,
+svg {
     vertical-align: baseline !important;
 }
 
@@ -19,9 +20,9 @@ div.list-number {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  span.list-infocontent {
+}
+
+span.list-infocontent {
     font-size: 12px;
     font-style: italic;
-  }
+}
