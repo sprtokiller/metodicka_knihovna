@@ -14,12 +14,8 @@
     <n-card title="Jak mám posoudit, zda byla odpověď správná nebo ne?">Chytrá odpověď </n-card>
   </section>
 </template>
+
 <script setup lang="ts">
 import { NH2, NCard } from 'naive-ui'
 </script>
 
-<style scoped>
-.n-card {
-  margin-bottom: 1rem;
-}
-</style>

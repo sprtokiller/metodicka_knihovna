@@ -73,7 +73,6 @@
               šetří to čas v hodině, kdy realizujeme TK</n-tooltip>
           </n-list-item>
         </n-list>
-
       </n-col>
     </n-row>
   </section>
@@ -108,4 +107,5 @@ const mainColor = values.primaryColor;
   border: solid 5px #000;
   border-color: gray;
   border-radius: 0 50%/100px 100px 0;
-}</style>
+}
+</style>

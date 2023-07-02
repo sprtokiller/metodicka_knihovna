@@ -12,9 +12,3 @@
 <script setup lang="ts">
 import { NH2, NCard, NButton } from 'naive-ui'
 </script>
-
-<style scoped>
-.n-button {
-  margin-bottom: 1rem;
-}
-</style>

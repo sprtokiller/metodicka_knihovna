@@ -26,3 +26,19 @@ span.list-infocontent {
     font-size: 12px;
     font-style: italic;
 }
+
+.outer-content-padding {
+    padding: 0rem !important;
+}
+
+.inner-content-padding {
+    padding: 0rem !important;
+}
+
+.n-button {
+    margin-bottom: 0.25rem;
+}
+
+.n-card {
+    margin-bottom: 0.5rem;
+}
