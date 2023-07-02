@@ -1,0 +1,232 @@
+{
+    "activities": [
+        {
+            "name": "Tisková konference",
+            "slides": [
+                {
+                    "parts": {
+                        "benefit": "Otázky a odpovědi, které zazní během tiskové konference, může kantor/ka využít jako vstupy do testů či jiných forem opakování / upevňování učiva",
+                        "desc": "Doformulovat - studenti formou hry na novináře a experty na tiskovou konferenci – novinářské redakce „grilují“ tým expertů. Expertní tým za správné odpovědi získává title…",
+                        "target": "Procvičit dovednost formulovat správně otázky, abych se dozvěděl požadovanou informaci.\nProcvičit učivo / informace, které souvisí s probranou či v budoucnu probíranou látkou / učivem."
+                    },
+                    "right_bar": {
+                        "group_count": 6,
+                        "group_size_max": 6,
+                        "group_size_min": 4,
+                        "length_max": 40,
+                        "length_min": 25,
+                        "tools": "Stopky, Losovací sada, Vytištěné pracovní listy"
+                    },
+                    "title": "Profil aktivity",
+                    "type": "profile"
+                },
+                {
+                    "instructions": [
+                        {
+                            "title": "Rozdělte třídu na skupiny po 4 (novinářské redakce) a jednu skupinu expertů."
+                        },
+                        {
+                            "title": "Zadejte téma, ke kterému novináři vytvoří otázky, experti si připraví odpovědi."
+                        },
+                        {
+                            "note": "Jste v roli moderátora (rozhodce) – posuzujete relevantnost otázky",
+                            "title": "Před zahájením TK vysvětlete postup kladení otázek"
+                        },
+                        {
+                            "title": "Kantor zahájí TK a vyzve prvního novináře, aby položil otázku"
+                        },
+                        {
+                            "title": "Kantor zvolí konkrétního experta, spouští 30 sekundový limit"
+                        },
+                        {
+                            "note": "Kantor posoudí správnost a věcnost odpovědi. Zapisuje info, zda otázka zodpovězena či nezodpovězena",
+                            "title": "Expert zodpoví otázku"
+                        }
+                    ],
+                    "prep_phase": [
+                        {
+                            "title": "Sestavit seznam témat pro experty (1-5 témat)"
+                        },
+                        {
+                            "title": "Nasdílet témata studentům – ideálně v předchozí hodině, minimálně 1 den předem."
+                        },
+                        {
+                            "title": "Sestavit „vodítka“ – tzn. 2-3 otázky, které studentům pomohou lépe pochopit, jaké typy otázek tvořit.",
+                            "warn": "Doporučeno v případě, že cílová skupina je mladší třída."
+                        },
+                        {
+                            "title": "Vytisknout „vodítkové“ otázky na papír, případně předepsat na flipchart."
+                        }
+                    ],
+                    "time": [
+                        {
+                            "time": 3,
+                            "title": "Rozdělení do skupin"
+                        },
+                        {
+                            "time": 2,
+                            "title": "Zadání pro novinářské redakce a experty"
+                        },
+                        {
+                            "desc": "Redakce si připravuje otázky, na které se budou ptát expertů.",
+                            "time": 5,
+                            "title": "Příprava otázek a odpovědí"
+                        },
+                        {
+                            "desc": "Průběh a moderace",
+                            "time": 10,
+                            "title": "Tisková konference 1"
+                        },
+                        {
+                            "desc": "Rotace na pozici týmů a expertů",
+                            "time": 10,
+                            "title": "Tisková konference 2"
+                        },
+                        {
+                            "time": 5,
+                            "title": "Zpětná vazba a vyhodnocení"
+                        }
+                    ],
+                    "title": "Průběh krok za krokem",
+                    "type": "steps"
+                },
+                {
+                    "sections": [
+                        {
+                            "parts": [
+                                {
+                                    "title": "Seznam témat, na které se budou tvořit otázky (vygeneruje kantor)"
+                                },
+                                {
+                                    "title": "Pracovní list pro zápis otázek – týmy „redakce“ využijí levou část PL, týmy „experti“ pracují s pravou částí PL"
+                                },
+                                {
+                                    "link": 0,
+                                    "title": "Časomíra – přesýpací hodiny, písnička jako časově ohraničený úsek, atd."
+                                }
+                            ],
+                            "title": "Materiály a pomůcky"
+                        }
+                    ],
+                    "title": "Příprava",
+                    "type": "prep"
+                },
+                {
+                    "title": "Varianty",
+                    "type": "variants",
+                    "variants": [
+                        {
+                            "desc": "Odpovídá 1 tým expertů, všichny „redakci“ si připravují otázky pro jednu oblast. Kantor zajišťuje, aby z panelu expertů odpovídali průběžně všichni přítomní experti – každý přijde na řadu. Je na kantorovi, aby vždy dotaz nasměroval na konkrétního experta.",
+                            "title": "Varianta A"
+                        },
+                        {
+                            "desc": "Sunt enim tempor ipsum duis qui do ex adipisicing. Elit minim nisi sunt amet mollit non amet adipisicing incididunt. Ea minim elit magna amet do nulla ut. Adipisicing in ipsum anim magna. Et cillum exercitation incididunt ullamco esse nostrud. Veniam elit amet cupidatat in eiusmod esse consectetur ut aliqua sint pariatur.",
+                            "title": "Varianta B"
+                        },
+                        {
+                            "desc": "Officia sunt quis tempor consectetur officia. Eu ut aliqua Lorem ullamco culpa ex laborum ex. Adipisicing aute elit occaecat aliqua laborum. Minim est qui elit culpa qui quis ad duis dolore proident. Dolore laborum amet aute laboris excepteur commodo cillum aliquip dolore cupidatat qui anim reprehenderit consequat. Eiusmod aliquip ipsum excepteur velit duis officia consectetur ea cillum adipisicing sint nisi.",
+                            "title": "Varianta C"
+                        }
+                    ]
+                },
+                {
+                    "sections": [
+                        {
+                            "links": [
+                                {
+                                    "title": "Časomíry – různé formáty a možnosti pro měření času",
+                                    "type": "pdf"
+                                },
+                                {
+                                    "title": "Pro novinářskou redakci / tým expertů",
+                                    "type": "pdf"
+                                },
+                                {
+                                    "title": "Přehled témat pro tvorbu otázek jednotlivými novinářskými redakcemi",
+                                    "type": "pdf"
+                                }
+                            ],
+                            "title": "Pracovní list"
+                        }
+                    ],
+                    "title": "Ke stažení",
+                    "type": "download"
+                },
+                {
+                    "questions": [
+                        {
+                            "answer": "Chytrá odpověď",
+                            "title": "Mám nastavit nějaká pravidla pro vymýšlení názvů jednotlivých redakcí?"
+                        },
+                        {
+                            "answer": "Chytrá odpověď",
+                            "title": "Do jak velkých skupin mám třídu rozdělit?"
+                        },
+                        {
+                            "answer": "Chytrá odpověď",
+                            "title": "Kolik skupin budevystupovat v roli expertů?"
+                        },
+                        {
+                            "answer": "Chytrá odpověď",
+                            "title": "Mám zadat téma pro TK všem skupinám naráz nebo postupně?"
+                        },
+                        {
+                            "answer": "Chytrá odpověď",
+                            "title": "Jaký časový limit mám nastavit na generování 5 otázek?"
+                        },
+                        {
+                            "answer": "Chytrá odpověď",
+                            "title": "Za expertní tým má mluvit jen jeden student nebo se mohou střídat?"
+                        },
+                        {
+                            "answer": "Chytrá odpověď",
+                            "title": "Jak mám posoudit, zda byla odpověď správná nebo ne?"
+                        }
+                    ],
+                    "title": "Návodové otázky",
+                    "type": "faq"
+                },
+                {
+                    "title": "Inspirace",
+                    "type": "inspiration"
+                },
+                {
+                    "sections": [
+                        {
+                            "images": [
+                                "https://picsum.photos/seed/a/800",
+                                "https://picsum.photos/seed/b/800",
+                                "https://picsum.photos/seed/c/800",
+                                "https://picsum.photos/seed/d/800",
+                                "https://picsum.photos/seed/e/800",
+                                "https://picsum.photos/seed/f/800",
+                                "https://picsum.photos/seed/g/800"
+                            ],
+                            "title": "Příprava"
+                        },
+                        {
+                            "images": [
+                                "https://picsum.photos/seed/h/800",
+                                "https://picsum.photos/seed/i/800",
+                                "https://picsum.photos/seed/j/800",
+                                "https://picsum.photos/seed/k/800",
+                                "https://picsum.photos/seed/l/800",
+                                "https://picsum.photos/seed/m/800",
+                                "https://picsum.photos/seed/n/800",
+                                "https://picsum.photos/seed/o/800",
+                                "https://picsum.photos/seed/p/800"
+                            ],
+                            "title": "Postup"
+                        }
+                    ],
+                    "title": "Galerie",
+                    "type": "gallery"
+                },
+                {
+                    "title": "Deriváty",
+                    "type": "derivates"
+                }
+            ]
+        }
+    ]
+}
