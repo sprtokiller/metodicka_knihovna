@@ -1,7 +1,7 @@
 <template>
   <n-layout class="vh-100 vw-100">
     <n-layout-header style="height: 4rem; padding: 1.5rem" bordered>
-      Test deploy funkce
+      Název aktivity TODO
     </n-layout-header>
     <n-layout position="absolute" style="top: 4rem;" has-sider sider-placement="right">
       <n-layout :native-scrollbar="false" class="outer-content-padding">
